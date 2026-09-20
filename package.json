@@ -1,0 +1,21 @@
+{
+  "name": "wesco-assessment",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ระบบแบบทดสอบความสามารถพนักงาน Wesco — Cloudflare Pages + D1",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler pages dev public --d1=DB --live-reload",
+    "deploy": "wrangler pages deploy public",
+    "db:create": "wrangler d1 create wesco_assessment",
+    "db:init": "wrangler d1 execute wesco_assessment --remote --file=./db/schema.sql",
+    "db:seed": "wrangler d1 execute wesco_assessment --remote --file=./db/seed.sql",
+    "db:init:local": "wrangler d1 execute wesco_assessment --local --file=./db/schema.sql",
+    "db:seed:local": "wrangler d1 execute wesco_assessment --local --file=./db/seed.sql",
+    "db:reset": "wrangler d1 execute wesco_assessment --remote --file=./db/reset.sql",
+    "admin:create": "node scripts/make-admin.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

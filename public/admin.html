@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="th" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ระบบหลังบ้าน · Wesco Assessment</title>
+<meta name="theme-color" content="#00b227">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/css/app.css">
+<script>
+  try { var t = localStorage.getItem('wesco-theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">ข้ามไปยังเนื้อหาหลัก</a>
+
+  <header class="topbar">
+    <div class="shell topbar-in">
+      <div class="brand-lockup grow">
+        <img src="/assets/logo-mark.svg" alt="Wesco" class="logo" width="63" height="30">
+        <div class="grow" style="min-width:0">
+          <div class="topbar-title">ระบบหลังบ้าน</div>
+          <div class="topbar-sub">Assessment Admin Console</div>
+        </div>
+      </div>
+      <div class="row" id="topbarActions" style="gap:4px"></div>
+    </div>
+  </header>
+
+  <main id="main" class="shell page">
+    <div class="admin-layout">
+      <aside class="sidebar" id="sidebar" hidden>
+        <div class="card" style="padding:8px">
+          <nav id="sidenav" aria-label="เมนูหลัก"></nav>
+        </div>
+      </aside>
+      <div id="view" aria-live="polite"></div>
+    </div>
+  </main>
+
+  <nav class="admin-nav" id="bottomnav" aria-label="เมนูหลัก" hidden></nav>
+
+  <noscript>
+    <div class="shell page"><div class="note note-warn">เว็บไซต์นี้ต้องเปิดใช้งาน JavaScript</div></div>
+  </noscript>
+
+  <script type="module" src="/js/admin.js"></script>
+</body>
+</html>

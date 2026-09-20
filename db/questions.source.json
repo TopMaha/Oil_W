@@ -1,0 +1,1536 @@
+[
+ {
+  "sheet": "TH-BP-025",
+  "title": "แบบทดสอบความสามารถ TH-BP-025 Incoming Process",
+  "questions": [
+   {
+    "n": 1,
+    "text": "วัตถุประสงค์หลักของกระบวนการ Incoming Quality Assurance (IQA) คืออะไร?",
+    "choices": [
+     {
+      "label": "ก",
+      "text": "ควบคุมต้นทุนการจัดซื้อวัตถุดิบ",
+      "row": 3
+     },
+     {
+      "label": "ข",
+      "text": "ตรวจสอบและควบคุมคุณภาพวัตถุดิบก่อนเข้าสู่กระบวนการผลิต",
+      "row": 4
+     },
+     {
+      "label": "ค",
+      "text": "ควบคุมแผนการผลิตประจำวัน",
+      "row": 5
+     },
+     {
+      "label": "ง",
+      "text": "ตรวจสอบผลิตภัณฑ์สำเร็จรูปก่อนส่งลูกค้า",
+      "row": 6
+     }
+    ],
+    "answer": "ข",
+    "row": 2
+   },
+   {
+    "n": 2,
+    "text": "หากพบว่าเอกสารประกอบการจัดส่งไม่ครบถ้วน IQA ต้องดำเนินการอย่างไรเป็นลำดับแรก?",
+    "choices": [
+     {
+      "label": "ก",
+      "text": "ย้ายวัสดุเข้าสู่ Store ทันที",
+      "row": 10
+     },
+     {
+      "label": "ข",
+      "text": "ส่งคืน Supplier ทันที",
+      "row": 11
+     },
+     {
+      "label": "ค",
+      "text": "คัดแยกวัสดุไว้ใน Hold Area และแจ้ง QA Engineer หรือ SQE",
+      "row": 12
+     },
+     {
+      "label": "ง",
+      "text": "อนุมัติ Use As Is",
+      "row": 13
+     }
+    ],
+    "answer": "ค",
+    "row": 8
+   },
+   {
+    "n": 3,
+    "text": "สำหรับ Lot Size = 1,000 ชิ้น ต้องสุ่มตรวจจำนวนกี่ชิ้นตาม AQL Sampling Plan?",
+    "choices": [
+     {
+      "label": "ก",
+      "text": "32 ชิ้น",
+      "row": 17
+     },
+     {
+      "label": "ข",
+      "text": "50 ชิ้น",
+      "row": 18
+     },
+     {
+      "label": "ค",
+      "text": "80 ชิ้น",
+      "row": 19
+     },
+     {
+      "label": "ง",
+      "text": "125 ชิ้น",
+      "row": 20
+     }
+    ],
+    "answer": "ค",
+    "row": 15
+   },
+   {
+    "n": 4,
+    "text": "ในการตรวจสอบ Wire Harness รายการใดถูกจัดเป็น Critical Defect?",
+    "choices": [
+     {
+      "label": "ก",
+      "text": "Appearance Inspection",
+      "row": 24
+     },
+     {
+      "label": "ข",
+      "text": "Identification Verification",
+      "row": 25
+     },
+     {
+      "label": "ค",
+      "text": "Pull Test",
+      "row": 26
+     },
+     {
+      "label": "ง",
+      "text": "Document Verification",
+      "row": 27
+     }
+    ],
+    "answer": "ค",
+    "row": 23
+   },
+   {
+    "n": 5,
+    "text": "เมื่อพบวัตถุดิบไม่เป็นไปตามข้อกำหนด (Reject) ข้อใดไม่ใช่การดำเนินการของ IQA?",
+    "choices": [
+     {
+      "label": "ก",
+      "text": "ติดฉลาก Reject Report",
+      "row": 31
+     },
+     {
+      "label": "ข",
+      "text": "จัดทำ NCR",
+      "row": 32
+     },
+     {
+      "label": "ค",
+      "text": "แยกวัสดุไว้ในพื้นที่ MRB",
+      "row": 33
+     },
+     {
+      "label": "ง",
+      "text": "นำวัสดุเข้าคลัง Store ทันที",
+      "row": 34
+     }
+    ],
+    "answer": "ง",
+    "row": 30
+   }
+  ]
+ },
+ {
+  "sheet": "TH-BP-024",
+  "title": "แบบทดสอบความสามารถ TH-BP-024 GENERAL INPROCESS INSPECTION AND FINAL INSPECTION",
+  "questions": [
+   {
+    "n": 1,
+    "text": "วัตถุประสงค์ของกระบวนการนี้คืออะไร?",
+    "choices": [
+     {
+      "label": "ก",
+      "text": "กำหนดระบบการจัดซื้อวัตถุดิบ",
+      "row": 3
+     },
+     {
+      "label": "ข",
+      "text": "กำหนดระบบการตรวจสอบระหว่างกระบวนการผลิตสำหรับงานประกอบทั้งหมด",
+      "row": 4
+     },
+     {
+      "label": "ค",
+      "text": "กำหนดระบบการจัดการคลังสินค้า",
+      "row": 5
+     },
+     {
+      "label": "ง",
+      "text": "กำหนดระบบการส่งมอบสินค้าให้ลูกค้า",
+      "row": 6
+     }
+    ],
+    "answer": "ข",
+    "row": 2
+   },
+   {
+    "n": 2,
+    "text": "การตรวจสอบ IPQA/OQA ต้องดำเนินการตามเอกสารใดเป็นหลัก?",
+    "choices": [
+     {
+      "label": "ก",
+      "text": "Packing List",
+      "row": 10
+     },
+     {
+      "label": "ข",
+      "text": "Purchase Order",
+      "row": 11
+     },
+     {
+      "label": "ค",
+      "text": "Inspection Checklist ที่เกี่ยวข้อง",
+      "row": 12
+     },
+     {
+      "label": "ง",
+      "text": "NCR",
+      "row": 13
+     }
+    ],
+    "answer": "ค",
+    "row": 9
+   },
+   {
+    "n": 3,
+    "text": "ข้อใดต่อไปนี้ถือเป็นตัวอย่างของ Critical Issue?",
+    "choices": [
+     {
+      "label": "ก",
+      "text": "สีซีดเล็กน้อยที่ไม่มีผลต่อการใช้งาน",
+      "row": 17
+     },
+     {
+      "label": "ข",
+      "text": "เอกสารจัดเก็บไม่เป็นระเบียบ",
+      "row": 18
+     },
+     {
+      "label": "ค",
+      "text": "Wrong Part หรือ Missing Components",
+      "row": 19
+     },
+     {
+      "label": "ง",
+      "text": "ป้ายระบุพื้นที่ชำรุด",
+      "row": 20
+     }
+    ],
+    "answer": "ค",
+    "row": 16
+   },
+   {
+    "n": 4,
+    "text": "หากผลการตรวจสอบไม่ผ่านและเป็น Non-Critical Issue ต้องดำเนินการอย่างไร?",
+    "choices": [
+     {
+      "label": "ก",
+      "text": "หยุดไลน์การผลิตทันที",
+      "row": 24
+     },
+     {
+      "label": "ข",
+      "text": "ออก 8D ทันที",
+      "row": 25
+     },
+     {
+      "label": "ค",
+      "text": "ดำเนินการ Containment Action และกลับไปขั้นตอนการตรวจสอบ",
+      "row": 26
+     },
+     {
+      "label": "ง",
+      "text": "Scrap ผลิตภัณฑ์ทั้งหมด",
+      "row": 27
+     }
+    ],
+    "answer": "ค",
+    "row": 23
+   },
+   {
+    "n": 5,
+    "text": "กรณีพบ Recurring Issue หรือปัญหาที่ส่งผลกระทบต่อลูกค้า QA ต้องออกเอกสารใด?",
+    "choices": [
+     {
+      "label": "ก",
+      "text": "COC",
+      "row": 31
+     },
+     {
+      "label": "ข",
+      "text": "CAR เท่านั้น",
+      "row": 32
+     },
+     {
+      "label": "ค",
+      "text": "NCR",
+      "row": 33
+     },
+     {
+      "label": "ง",
+      "text": "8D Report",
+      "row": 34
+     }
+    ],
+    "answer": "ง",
+    "row": 30
+   }
+  ]
+ },
+ {
+  "sheet": "TH-BP-07.01",
+  "title": "แบบทดสอบความสามารถ TH-BP-07.01 Final Test and Inspection",
+  "questions": [
+   {
+    "n": 1,
+    "text": "ก่อนเริ่ม Final Inspection ต้องตรวจสอบข้อมูลใดใน Work Order ให้ถูกต้อง?",
+    "choices": [
+     {
+      "label": "ก",
+      "text": "ราคาสินค้าและต้นทุนการผลิต",
+      "row": 3
+     },
+     {
+      "label": "ข",
+      "text": "Assembly Item และ Revision ให้ตรงกับเอกสารการผลิต",
+      "row": 4
+     },
+     {
+      "label": "ค",
+      "text": "รายชื่อ Supplier",
+      "row": 5
+     },
+     {
+      "label": "ง",
+      "text": "เลขที่ Invoice",
+      "row": 6
+     }
+    ],
+    "answer": "ข",
+    "row": 2
+   },
+   {
+    "n": 2,
+    "text": "หากสถานะ FAI ใน Work Order ระบุว่าต้องดำเนินการ FAI ผู้ตรวจสอบต้องทำอย่างไร?",
+    "choices": [
+     {
+      "label": "ก",
+      "text": "ข้ามขั้นตอน FAI ได้",
+      "row": 10
+     },
+     {
+      "label": "ข",
+      "text": "แจ้งผู้รับผิดชอบ FAI เพื่อสร้าง Operation Sequence 35",
+      "row": 11
+     },
+     {
+      "label": "ค",
+      "text": "ส่งงานเข้าบรรจุภัณฑ์ทันที",
+      "row": 12
+     },
+     {
+      "label": "ง",
+      "text": "ปิด Work Order",
+      "row": 13
+     }
+    ],
+    "answer": "ข",
+    "row": 9
+   },
+   {
+    "n": 3,
+    "text": "ข้อใดเป็นหนึ่งในรายการที่ต้องตรวจสอบระหว่าง Final Inspection?",
+    "choices": [
+     {
+      "label": "ก",
+      "text": "ตรวจสอบตำแหน่งและข้อมูลบนฉลาก",
+      "row": 17
+     },
+     {
+      "label": "ข",
+      "text": "ตรวจสอบราคาวัตถุดิบ",
+      "row": 18
+     },
+     {
+      "label": "ค",
+      "text": "ตรวจสอบใบเสนอราคา",
+      "row": 19
+     },
+     {
+      "label": "ง",
+      "text": "ตรวจสอบการคัดเลือก Supplier",
+      "row": 20
+     }
+    ],
+    "answer": "ก",
+    "row": 16
+   },
+   {
+    "n": 4,
+    "text": "มาตรฐานใดที่ใช้ในการตรวจสอบคุณภาพงานประกอบ?",
+    "choices": [
+     {
+      "label": "ก",
+      "text": "ISO 9001",
+      "row": 24
+     },
+     {
+      "label": "ข",
+      "text": "IPC/WHMA-A-620",
+      "row": 25
+     },
+     {
+      "label": "ค",
+      "text": "ANSI Z1.4",
+      "row": 26
+     },
+     {
+      "label": "ง",
+      "text": "ISO 14001",
+      "row": 27
+     }
+    ],
+    "answer": "ข",
+    "row": 23
+   },
+   {
+    "n": 5,
+    "text": "เมื่อการทดสอบและการตรวจสอบเสร็จสิ้น ผู้ตรวจสอบต้องดำเนินการข้อใด?",
+    "choices": [
+     {
+      "label": "ก",
+      "text": "ลงนามใน Work Order พร้อมวันที่และอักษรย่อผู้ตรวจสอบ",
+      "row": 31
+     },
+     {
+      "label": "ข",
+      "text": "ลบข้อมูลการทดสอบออกจากระบบ",
+      "row": 32
+     },
+     {
+      "label": "ค",
+      "text": "ส่ง Work Order กลับไป Production โดยไม่บันทึกผล",
+      "row": 33
+     },
+     {
+      "label": "ง",
+      "text": "ทำลายเอกสารการตรวจสอบ",
+      "row": 34
+     }
+    ],
+    "answer": "ก",
+    "row": 30
+   }
+  ]
+ },
+ {
+  "sheet": "TH-BP-07.02",
+  "title": "แบบทดสอบความสามารถ TH-BP-07.02 Wire Run List Interpretation",
+  "questions": [
+   {
+    "n": 1,
+    "text": "Wire Run List คืออะไร?",
+    "choices": [
+     {
+      "label": "ก",
+      "text": "เอกสารควบคุมที่ประกอบด้วย Run List BOM และ Wire Sheet",
+      "row": 3
+     },
+     {
+      "label": "ข",
+      "text": "เอกสารจัดซื้อวัตถุดิบ",
+      "row": 4
+     },
+     {
+      "label": "ค",
+      "text": "เอกสารตรวจรับสินค้า",
+      "row": 5
+     },
+     {
+      "label": "ง",
+      "text": "เอกสารอนุมัติการผลิต",
+      "row": 6
+     }
+    ],
+    "answer": "ก",
+    "row": 2
+   },
+   {
+    "n": 2,
+    "text": "ก่อนเริ่มงาน ผู้ประกอบต้องตรวจสอบข้อมูลใดให้ตรงกับ Work Order?",
+    "choices": [
+     {
+      "label": "ก",
+      "text": "ราคาและต้นทุนผลิตภัณฑ์",
+      "row": 10
+     },
+     {
+      "label": "ข",
+      "text": "Assembly Item และ Revision",
+      "row": 11
+     },
+     {
+      "label": "ค",
+      "text": "ชื่อ Supplier",
+      "row": 12
+     },
+     {
+      "label": "ง",
+      "text": "เลข Invoice",
+      "row": 13
+     }
+    ],
+    "answer": "ข",
+    "row": 9
+   },
+   {
+    "n": 3,
+    "text": "ใน Run List BOM ช่อง QTY (Quantity) หมายถึงอะไร?",
+    "choices": [
+     {
+      "label": "ก",
+      "text": "หมายเลขชิ้นส่วน",
+      "row": 17
+     },
+     {
+      "label": "ข",
+      "text": "หน่วยนับ",
+      "row": 18
+     },
+     {
+      "label": "ค",
+      "text": "จำนวนชิ้นส่วนหรือวัสดุที่ต้องใช้",
+      "row": 19
+     },
+     {
+      "label": "ง",
+      "text": "รายละเอียดของวัสดุ",
+      "row": 20
+     }
+    ],
+    "answer": "ค",
+    "row": 16
+   },
+   {
+    "n": 4,
+    "text": "หาก Label Location ระบุเป็น [L, 0.5] ต้องติดฉลากอย่างไร?",
+    "choices": [
+     {
+      "label": "ก",
+      "text": "ด้านขวาของขั้วต่อ ระยะ 0.5 นิ้ว",
+      "row": 24
+     },
+     {
+      "label": "ข",
+      "text": "ด้านซ้ายของขั้วต่อ ระยะ 0.5 นิ้ว",
+      "row": 25
+     },
+     {
+      "label": "ค",
+      "text": "กลางสายไฟ ระยะ 0.5 นิ้ว",
+      "row": 26
+     },
+     {
+      "label": "ง",
+      "text": "ด้านซ้ายของขั้วต่อ ระยะ 5 นิ้ว",
+      "row": 27
+     }
+    ],
+    "answer": "ข",
+    "row": 23
+   },
+   {
+    "n": 5,
+    "text": "หากความยาวสายไฟ (Cut Length) ไม่ตรงตามที่ระบุใน Wire Run List ผู้ปฏิบัติงานต้องทำอย่างไร?",
+    "choices": [
+     {
+      "label": "ก",
+      "text": "ตัดสายและประกอบต่อได้ทันที",
+      "row": 31
+     },
+     {
+      "label": "ข",
+      "text": "ปรับความยาวตามความเหมาะสม",
+      "row": 32
+     },
+     {
+      "label": "ค",
+      "text": "แจ้งหัวหน้างานก่อนดำเนินการต่อ",
+      "row": 33
+     },
+     {
+      "label": "ง",
+      "text": "เปลี่ยนสายไฟใหม่เอง",
+      "row": 34
+     }
+    ],
+    "answer": "ค",
+    "row": 30
+   }
+  ]
+ },
+ {
+  "sheet": "TH-BP-12",
+  "title": "แบบทดสอบความสามารถ TH-BP-012 Control of Nonconforming Product",
+  "questions": [
+   {
+    "n": 1,
+    "text": "เมื่อพบผลิตภัณฑ์ที่ไม่เป็นไปตามข้อกำหนด ขั้นตอนแรกที่ต้องดำเนินการคือข้อใด?",
+    "choices": [
+     {
+      "label": "ก",
+      "text": "ส่งสินค้าให้ลูกค้าตรวจสอบ",
+      "row": 3
+     },
+     {
+      "label": "ข",
+      "text": "ออก Rejection Report หรือแจ้งหัวหน้างานเพื่อออก Reject ในระบบ",
+      "row": 4
+     },
+     {
+      "label": "ค",
+      "text": "ทำลายสินค้าโดยทันที",
+      "row": 5
+     },
+     {
+      "label": "ง",
+      "text": "อนุมัติ Use As Is",
+      "row": 6
+     }
+    ],
+    "answer": "ข",
+    "row": 2
+   },
+   {
+    "n": 2,
+    "text": "การระบุผลิตภัณฑ์ที่ไม่เป็นไปตามข้อกำหนดต้องใช้วิธีใด?",
+    "choices": [
+     {
+      "label": "ก",
+      "text": "ติด Pass Tag",
+      "row": 10
+     },
+     {
+      "label": "ข",
+      "text": "ติด NCMR Tag และทำ Transaction ใน Oracle",
+      "row": 11
+     },
+     {
+      "label": "ค",
+      "text": "ติดฉลากเหลือง",
+      "row": 12
+     },
+     {
+      "label": "ง",
+      "text": "ไม่ต้องติดป้ายใดๆ",
+      "row": 13
+     }
+    ],
+    "answer": "ข",
+    "row": 9
+   },
+   {
+    "n": 3,
+    "text": "Disposition แบบ UAI (Use As Is) สามารถใช้ได้ในกรณีใด?",
+    "choices": [
+     {
+      "label": "ก",
+      "text": "ข้อบกพร่องมีผลต่อ Function ของผลิตภัณฑ์",
+      "row": 17
+     },
+     {
+      "label": "ข",
+      "text": "ข้อบกพร่องมีผลต่อ Fit ของผลิตภัณฑ์",
+      "row": 18
+     },
+     {
+      "label": "ค",
+      "text": "ข้อบกพร่องไม่มีผลต่อ Form, Fit และ Function ของผลิตภัณฑ์",
+      "row": 19
+     },
+     {
+      "label": "ง",
+      "text": "ทุกกรณีสามารถใช้ UAI ได้",
+      "row": 20
+     }
+    ],
+    "answer": "ค",
+    "row": 16
+   },
+   {
+    "n": 4,
+    "text": "สำหรับชิ้นส่วนที่ผ่านการ Sorting หรือ Rework แล้ว ต้องมีการระบุสถานะอย่างไร?",
+    "choices": [
+     {
+      "label": "ก",
+      "text": "ติด Pass Label",
+      "row": 24
+     },
+     {
+      "label": "ข",
+      "text": "ติด Reject Label",
+      "row": 25
+     },
+     {
+      "label": "ค",
+      "text": "ติด Tag PII",
+      "row": 26
+     },
+     {
+      "label": "ง",
+      "text": "ไม่ต้องติดป้าย",
+      "row": 27
+     }
+    ],
+    "answer": "ค",
+    "row": 23
+   },
+   {
+    "n": 5,
+    "text": "NCMR จะสามารถปิดได้เมื่อใด?",
+    "choices": [
+     {
+      "label": "ก",
+      "text": "เมื่อออก Rejection Report แล้ว",
+      "row": 31
+     },
+     {
+      "label": "ข",
+      "text": "เมื่อแยกกักผลิตภัณฑ์แล้ว",
+      "row": 32
+     },
+     {
+      "label": "ค",
+      "text": "เมื่อดำเนินการครบถ้วนและได้รับการอนุมัติเรียบร้อยแล้ว",
+      "row": 33
+     },
+     {
+      "label": "ง",
+      "text": "เมื่อ QA ลงนามเพียงคนเดียว",
+      "row": 34
+     }
+    ],
+    "answer": "ค",
+    "row": 30
+   }
+  ]
+ },
+ {
+  "sheet": "TH-BP-17",
+  "title": "แบบทดสอบความสามารถ TH-BP-017 Calibration",
+  "questions": [
+   {
+    "n": 1,
+    "text": "ความถี่ในการสอบเทียบเครื่องมือและอุปกรณ์โดยทั่วไปกำหนดไว้เท่าใด?",
+    "choices": [
+     {
+      "label": "ก",
+      "text": "ทุก 6 เดือน",
+      "row": 3
+     },
+     {
+      "label": "ข",
+      "text": "ทุก 9 เดือน",
+      "row": 4
+     },
+     {
+      "label": "ค",
+      "text": "ปีละ 1 ครั้ง",
+      "row": 5
+     },
+     {
+      "label": "ง",
+      "text": "ทุก 2 ปี",
+      "row": 6
+     }
+    ],
+    "answer": "ค",
+    "row": 2
+   },
+   {
+    "n": 2,
+    "text": "ข้อมูลใดต่อไปนี้ต้องปรากฏบนป้ายการสอบเทียบ (Calibration Tag)?",
+    "choices": [
+     {
+      "label": "ก",
+      "text": "ชื่อผู้สอบเทียบ วันที่สอบเทียบ วันที่ครบกำหนดครั้งถัดไป และหมายเลขเครื่องมือ",
+      "row": 10
+     },
+     {
+      "label": "ข",
+      "text": "ชื่อ Supplier และราคาเครื่องมือ",
+      "row": 11
+     },
+     {
+      "label": "ค",
+      "text": "ชื่อผู้ใช้งานและแผนก",
+      "row": 12
+     },
+     {
+      "label": "ง",
+      "text": "วันที่ซื้อและเลข PO",
+      "row": 13
+     }
+    ],
+    "answer": "ก",
+    "row": 9
+   },
+   {
+    "n": 3,
+    "text": "คำว่า OOT (Out of Tolerance) หมายถึงข้อใด?",
+    "choices": [
+     {
+      "label": "ก",
+      "text": "เครื่องมือถูกเก็บไว้นานเกินไป",
+      "row": 17
+     },
+     {
+      "label": "ข",
+      "text": "เครื่องมืออยู่ระหว่างการสอบเทียบ",
+      "row": 18
+     },
+     {
+      "label": "ค",
+      "text": "เครื่องมือมีค่าการวัดอยู่นอกช่วงความคลาดเคลื่อนที่ยอมรับได้",
+      "row": 19
+     },
+     {
+      "label": "ง",
+      "text": "เครื่องมือใหม่ที่ยังไม่เคยใช้งาน",
+      "row": 20
+     }
+    ],
+    "answer": "ค",
+    "row": 16
+   },
+   {
+    "n": 4,
+    "text": "ระยะผ่อนผันหลังวันครบกำหนดสอบเทียบที่อนุญาตคือกี่วัน?",
+    "choices": [
+     {
+      "label": "ก",
+      "text": "7 วัน",
+      "row": 24
+     },
+     {
+      "label": "ข",
+      "text": "15 วัน",
+      "row": 25
+     },
+     {
+      "label": "ค",
+      "text": "30 วัน",
+      "row": 26
+     },
+     {
+      "label": "ง",
+      "text": "60 วัน",
+      "row": 27
+     }
+    ],
+    "answer": "ค",
+    "row": 23
+   },
+   {
+    "n": 5,
+    "text": "Wesco ใช้มาตรฐานใดเป็นหลักอ้างอิงสำหรับผู้ให้บริการสอบเทียบภายนอก?",
+    "choices": [
+     {
+      "label": "ก",
+      "text": "ISO 14001",
+      "row": 31
+     },
+     {
+      "label": "ข",
+      "text": "IPC-A-620",
+      "row": 32
+     },
+     {
+      "label": "ค",
+      "text": "NIST",
+      "row": 33
+     },
+     {
+      "label": "ง",
+      "text": "UL",
+      "row": 34
+     }
+    ],
+    "answer": "ค",
+    "row": 30
+   }
+  ]
+ },
+ {
+  "sheet": "TH-QA-016",
+  "title": "Test Values for Pullout Test",
+  "questions": [
+   {
+    "n": 1,
+    "text": "สายขนาด 300 MCM ต้องผ่านแรงดึงขั้นต่ำเท่าใด?",
+    "choices": [
+     {
+      "label": "A",
+      "text": "500 lbf",
+      "row": 34
+     },
+     {
+      "label": "B",
+      "text": "550 lbf",
+      "row": 35
+     },
+     {
+      "label": "C",
+      "text": "600 lbf",
+      "row": 36
+     },
+     {
+      "label": "D",
+      "text": "650 lbf",
+      "row": 37
+     }
+    ],
+    "answer": "B",
+    "row": 33
+   },
+   {
+    "n": 2,
+    "text": "หากทดสอบสาย 350 MCM ได้ค่าแรงดึง 590 lbf ผลการทดสอบเป็นอย่างไร?",
+    "choices": [
+     {
+      "label": "A",
+      "text": "Pass",
+      "row": 41
+     },
+     {
+      "label": "B",
+      "text": "Fail",
+      "row": 42
+     }
+    ],
+    "answer": "B",
+    "row": 40
+   },
+   {
+    "n": 3,
+    "text": "ขนาดสายใดต่อไปนี้ต้องการแรงดึงมากที่สุด?",
+    "choices": [
+     {
+      "label": "A",
+      "text": "400 MCM",
+      "row": 46
+     },
+     {
+      "label": "B",
+      "text": "500 MCM",
+      "row": 47
+     },
+     {
+      "label": "C",
+      "text": "600 MCM",
+      "row": 48
+     },
+     {
+      "label": "D",
+      "text": "700-2000 MCM",
+      "row": 49
+     }
+    ],
+    "answer": "D",
+    "row": 45
+   },
+   {
+    "n": 4,
+    "text": "วัตถุประสงค์หลักของ Pull Test คืออะไร?",
+    "choices": [
+     {
+      "label": "A",
+      "text": "ตรวจสอบสีของสายไฟ",
+      "row": 53
+     },
+     {
+      "label": "B",
+      "text": "ตรวจสอบความแข็งแรงของการย้ำ Terminal/Ferrule กับสายไฟ",
+      "row": 54
+     },
+     {
+      "label": "C",
+      "text": "ตรวจสอบความยาวสาย",
+      "row": 55
+     },
+     {
+      "label": "D",
+      "text": "ตรวจสอบฉนวนสายไฟ",
+      "row": 56
+     }
+    ],
+    "answer": "B",
+    "row": 52
+   }
+  ]
+ },
+ {
+  "sheet": "TH-ADM-000",
+  "title": "ข้อสอบ Quality Manual",
+  "questions": [
+   {
+    "n": 1,
+    "text": "WESCO TLD Holding ดำเนินธุรกิจหลักเกี่ยวกับอะไร?",
+    "choices": [
+     {
+      "label": "A",
+      "text": "ออกแบบเครื่องจักรอุตสาหกรรม",
+      "row": 4
+     },
+     {
+      "label": "B",
+      "text": "พัฒนาระบบซอฟต์แวร์",
+      "row": 5
+     },
+     {
+      "label": "C",
+      "text": "ประสานงานและพัฒนาระบบไฟฟ้าต้นแบบและงานประกอบ",
+      "row": 6
+     },
+     {
+      "label": "D",
+      "text": "ขายวัตถุดิบอุตสาหกรรม",
+      "row": 7
+     }
+    ],
+    "answer": "C",
+    "row": 3
+   },
+   {
+    "n": 2,
+    "text": "Quality Policy ของบริษัทคืออะไร?",
+    "choices": [
+     {
+      "label": "A",
+      "text": "Customer First",
+      "row": 11
+     },
+     {
+      "label": "B",
+      "text": "Zero Defect Product",
+      "row": 12
+     },
+     {
+      "label": "C",
+      "text": "Committed to exceeding customer expectations through continuous process improvement",
+      "row": 13
+     },
+     {
+      "label": "D",
+      "text": "Quality Begins with Me",
+      "row": 14
+     }
+    ],
+    "answer": "C",
+    "row": 10
+   },
+   {
+    "n": 3,
+    "text": "หากเครื่องมือวัดเป็นส่วนสำคัญต่อความถูกต้องของผลการวัด จะต้องทำอะไร?",
+    "choices": [
+     {
+      "label": "A",
+      "text": "เก็บในตู้ล็อกเท่านั้น",
+      "row": 18
+     },
+     {
+      "label": "B",
+      "text": "สอบเทียบหรือทวนสอบตามระยะเวลาที่กำหนด",
+      "row": 19
+     },
+     {
+      "label": "C",
+      "text": "เปลี่ยนเครื่องมือทุกปี",
+      "row": 20
+     },
+     {
+      "label": "D",
+      "text": "ใช้เฉพาะฝ่าย QA",
+      "row": 21
+     }
+    ],
+    "answer": "B",
+    "row": 17
+   },
+   {
+    "n": 4,
+    "text": "ข้อใดเป็นวิธีจัดการ Nonconforming Output?",
+    "choices": [
+     {
+      "label": "A",
+      "text": "Segregation / Containment",
+      "row": 25
+     },
+     {
+      "label": "B",
+      "text": "Correction",
+      "row": 26
+     },
+     {
+      "label": "C",
+      "text": "Inform Customer",
+      "row": 27
+     },
+     {
+      "label": "D",
+      "text": "ถูกทุกข้อ",
+      "row": 28
+     }
+    ],
+    "answer": "D",
+    "row": 24
+   },
+   {
+    "n": 5,
+    "text": "Internal Audit มีวัตถุประสงค์เพื่ออะไร?",
+    "choices": [
+     {
+      "label": "A",
+      "text": "ตรวจจับพนักงานที่ทำผิด",
+      "row": 32
+     },
+     {
+      "label": "B",
+      "text": "ประเมินว่า QMS สอดคล้องกับข้อกำหนดและมีการนำไปใช้อย่างมีประสิทธิผล",
+      "row": 33
+     },
+     {
+      "label": "C",
+      "text": "ลดจำนวนพนักงาน",
+      "row": 34
+     },
+     {
+      "label": "D",
+      "text": "ควบคุมต้นทุนการผลิต",
+      "row": 35
+     }
+    ],
+    "answer": "B",
+    "row": 31
+   }
+  ]
+ },
+ {
+  "sheet": "Cosmetic Ins",
+  "title": "Cosmetic Inspection Test",
+  "questions": [
+   {
+    "n": 1,
+    "text": "หากพบ scratches ขนาดกว้าง 0.01mm x 12.12mm จำนวน 3 จุด ผลการตรวจสอบคือข้อใด",
+    "choices": [
+     {
+      "label": "A",
+      "text": "Accept",
+      "row": 5
+     },
+     {
+      "label": "B",
+      "text": "Reject",
+      "row": 6
+     },
+     {
+      "label": "C",
+      "text": "UAI",
+      "row": 7
+     },
+     {
+      "label": "D",
+      "text": "ถูกทุกข้อ",
+      "row": 8
+     }
+    ],
+    "answer": "B",
+    "row": 3
+   },
+   {
+    "n": 2,
+    "text": "หาก Drawing ไม่ได้ระบุ Cosmetic Code ให้ใช้ Code ใดในการตรวจ?",
+    "choices": [
+     {
+      "label": "A",
+      "text": "I-A",
+      "row": 15
+     },
+     {
+      "label": "B",
+      "text": "II-A",
+      "row": 16
+     },
+     {
+      "label": "C",
+      "text": "III-B",
+      "row": 17
+     },
+     {
+      "label": "D",
+      "text": "III-C",
+      "row": 18
+     }
+    ],
+    "answer": "D",
+    "row": 14
+   },
+   {
+    "n": 3,
+    "text": "ผู้ตรวจ Cosmetic ควรมีสายตาอย่างน้อยเท่าใด?",
+    "choices": [
+     {
+      "label": "A",
+      "text": "20/40",
+      "row": 22
+     },
+     {
+      "label": "B",
+      "text": "20/30",
+      "row": 23
+     },
+     {
+      "label": "C",
+      "text": "20/25",
+      "row": 24
+     },
+     {
+      "label": "D",
+      "text": "20/20",
+      "row": 25
+     }
+    ],
+    "answer": "D",
+    "row": 21
+   },
+   {
+    "n": 4,
+    "text": "ข้อใดคือ Cosmetic Allowance ที่โดยทั่วไปยอมรับได้?",
+    "choices": [
+     {
+      "label": "A",
+      "text": "Manufacturing Process Marks",
+      "row": 29
+     },
+     {
+      "label": "B",
+      "text": "Grain Marks",
+      "row": 30
+     },
+     {
+      "label": "C",
+      "text": "Tool Marks",
+      "row": 31
+     },
+     {
+      "label": "D",
+      "text": "ถูกทุกข้อ",
+      "row": 32
+     }
+    ],
+    "answer": "D",
+    "row": 28
+   },
+   {
+    "n": 5,
+    "text": "Cosmetic Inspection ใช้วิธีใดในการประเมินเบื้องต้น?",
+    "choices": [
+     {
+      "label": "A",
+      "text": "Microscope Inspection",
+      "row": 36
+     },
+     {
+      "label": "B",
+      "text": "Dimension Measurement",
+      "row": 37
+     },
+     {
+      "label": "C",
+      "text": "Time & Distance (T&D) Inspection",
+      "row": 38
+     },
+     {
+      "label": "D",
+      "text": "CMM Inspection",
+      "row": 39
+     }
+    ],
+    "answer": "C",
+    "row": 35
+   },
+   {
+    "n": 6,
+    "text": "Code II-B ต้องตรวจที่ระยะและเวลาเท่าใด?",
+    "choices": [
+     {
+      "label": "A",
+      "text": "10\" / 10 sec",
+      "row": 43
+     },
+     {
+      "label": "B",
+      "text": "18\" / 5 sec",
+      "row": 44
+     },
+     {
+      "label": "C",
+      "text": "18\" / 10 sec",
+      "row": 45
+     },
+     {
+      "label": "D",
+      "text": "24\" / 3 sec",
+      "row": 46
+     }
+    ],
+    "answer": "B",
+    "row": 42
+   },
+   {
+    "n": 7,
+    "text": "หากพบ Defect ภายใน Time & Distance ที่กำหนด ต้องทำอย่างไรต่อ?",
+    "choices": [
+     {
+      "label": "A",
+      "text": "Reject ทันที",
+      "row": 50
+     },
+     {
+      "label": "B",
+      "text": "วัด Defect เท่านั้น",
+      "row": 51
+     },
+     {
+      "label": "C",
+      "text": "อ้างอิง Appendix ที่เกี่ยวข้องเพื่อตัดสิน Accept/Reject",
+      "row": 52
+     },
+     {
+      "label": "D",
+      "text": "แจ้ง Supplier ทันที",
+      "row": 53
+     }
+    ],
+    "answer": "C",
+    "row": 49
+   }
+  ]
+ },
+ {
+  "sheet": "Workmanship",
+  "title": "Workmanship Test",
+  "questions": [
+   {
+    "n": 1,
+    "text": "วัตถุประสงค์ของ Workmanship Standards คืออะไร?",
+    "choices": [
+     {
+      "label": "A",
+      "text": "ใช้กำหนดราคาสินค้า",
+      "row": 3
+     },
+     {
+      "label": "B",
+      "text": "กำหนดมาตรฐานขั้นต่ำด้านฝีมือการผลิตสำหรับ Manufacturing, Engineering และ QA",
+      "row": 4
+     },
+     {
+      "label": "C",
+      "text": "ใช้สำหรับการจัดซื้อวัตถุดิบ",
+      "row": 5
+     },
+     {
+      "label": "D",
+      "text": "ใช้สำหรับ Audit Supplier เท่านั้น",
+      "row": 6
+     }
+    ],
+    "answer": "B",
+    "row": 2
+   },
+   {
+    "n": 2,
+    "text": "หากเกิดข้อขัดแย้งระหว่าง Drawing กับ Workmanship Standard ต้องยึดตามอะไรเป็นอันดับแรก?",
+    "choices": [
+     {
+      "label": "A",
+      "text": "Workmanship Standard",
+      "row": 10
+     },
+     {
+      "label": "B",
+      "text": "WI ของ Operator",
+      "row": 11
+     },
+     {
+      "label": "C",
+      "text": "Engineering Drawing / Specification / Build Instruction",
+      "row": 12
+     },
+     {
+      "label": "D",
+      "text": "ประสบการณ์ของผู้ตรวจ",
+      "row": 13
+     }
+    ],
+    "answer": "C",
+    "row": 9
+   },
+   {
+    "n": 3,
+    "text": "หาก Drawing ไม่ได้ระบุข้อกำหนดเกี่ยวกับ Label ไว้ ควรดำเนินการอย่างไร?",
+    "choices": [
+     {
+      "label": "A",
+      "text": "ไม่ต้องติด Label",
+      "row": 17
+     },
+     {
+      "label": "B",
+      "text": "ให้เป็นไปตามข้อกำหนดขั้นต่ำของ Workmanship Standard",
+      "row": 18
+     },
+     {
+      "label": "C",
+      "text": "ให้ Production ตัดสินใจเอง",
+      "row": 19
+     },
+     {
+      "label": "D",
+      "text": "ส่งถามลูกค้าก่อนเสมอ",
+      "row": 20
+     }
+    ],
+    "answer": "B",
+    "row": 16
+   },
+   {
+    "n": 4,
+    "text": "ข้อใดเป็นวัตถุประสงค์ของ Workmanship Standards?",
+    "choices": [
+     {
+      "label": "A",
+      "text": "เพิ่มความสม่ำเสมอของคุณภาพผลิตภัณฑ์",
+      "row": 24
+     },
+     {
+      "label": "B",
+      "text": "ส่งเสริมความปลอดภัย",
+      "row": 25
+     },
+     {
+      "label": "C",
+      "text": "เพิ่มความน่าเชื่อถือของผลิตภัณฑ์",
+      "row": 26
+     },
+     {
+      "label": "D",
+      "text": "ถูกทุกข้อ",
+      "row": 27
+     }
+    ],
+    "answer": "D",
+    "row": 23
+   },
+   {
+    "n": 5,
+    "text": "มาตรฐาน IPC-A-620 เกี่ยวข้องกับเรื่องใด?",
+    "choices": [
+     {
+      "label": "A",
+      "text": "PCB Assembly",
+      "row": 31
+     },
+     {
+      "label": "B",
+      "text": "Cable & Wire Harness Acceptance Requirements",
+      "row": 32
+     },
+     {
+      "label": "C",
+      "text": "Calibration System",
+      "row": 33
+     },
+     {
+      "label": "D",
+      "text": "Cosmetic Inspection",
+      "row": 34
+     }
+    ],
+    "answer": "B",
+    "row": 30
+   },
+   {
+    "n": 6,
+    "text": "มาตรฐาน IPC-A-610 เกี่ยวข้องกับเรื่องใด?",
+    "choices": [
+     {
+      "label": "A",
+      "text": "Acceptability of Electronic Assemblies",
+      "row": 38
+     },
+     {
+      "label": "B",
+      "text": "Calibration Laboratory",
+      "row": 39
+     },
+     {
+      "label": "C",
+      "text": "ESD Control",
+      "row": 40
+     },
+     {
+      "label": "D",
+      "text": "Helium Leak Test",
+      "row": 41
+     }
+    ],
+    "answer": "A",
+    "row": 37
+   },
+   {
+    "n": 7,
+    "text": "ข้อใดเป็นลักษณะของพนักงานที่มี Good Workmanship?",
+    "choices": [
+     {
+      "label": "A",
+      "text": "มีทักษะในการทำงาน",
+      "row": 45
+     },
+     {
+      "label": "B",
+      "text": "ใส่ใจรายละเอียดด้านคุณภาพ",
+      "row": 46
+     },
+     {
+      "label": "C",
+      "text": "มีทัศนคติเชิงบวกและมีวินัยด้านความปลอดภัย",
+      "row": 47
+     },
+     {
+      "label": "D",
+      "text": "ถูกทุกข้อ",
+      "row": 48
+     }
+    ],
+    "answer": "D",
+    "row": 44
+   }
+  ]
+ }
+]

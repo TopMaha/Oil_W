@@ -1,0 +1,13 @@
+name = "wesco-assessment"
+compatibility_date = "2025-09-01"
+pages_build_output_dir = "public"
+
+# ─────────────────────────────────────────────────────────────
+# ผูกฐานข้อมูล D1 เข้ากับโปรเจกต์
+# 1) สร้างฐานข้อมูล:  npx wrangler d1 create wesco_assessment
+# 2) นำค่า database_id ที่ได้มาใส่ด้านล่างนี้
+# ─────────────────────────────────────────────────────────────
+[[d1_databases]]
+binding = "DB"
+database_name = "wesco_assessment"
+database_id = "PASTE_YOUR_D1_DATABASE_ID_HERE"

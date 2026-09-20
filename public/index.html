@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="th" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ระบบแบบทดสอบความสามารถพนักงาน · Wesco</title>
+<meta name="description" content="ระบบแบบทดสอบความสามารถพนักงาน Wesco — ลงทะเบียน เลือกหัวข้อสอบ และดูผลคะแนนพร้อมเกรด">
+<meta name="theme-color" content="#00b227">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/css/app.css">
+<script>
+  // ตั้งธีมก่อนวาดหน้า กันภาพกระพริบ
+  try { var t = localStorage.getItem('wesco-theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">ข้ามไปยังเนื้อหาหลัก</a>
+
+  <header class="topbar" id="topbar">
+    <div class="shell topbar-in">
+      <div class="brand-lockup grow">
+        <img src="/assets/logo-mark.svg" alt="Wesco" class="logo" width="63" height="30">
+        <div class="grow" style="min-width:0">
+          <div class="topbar-title" id="siteTitle">ระบบแบบทดสอบความสามารถ</div>
+          <div class="topbar-sub" id="siteSub">Employee Competency Assessment</div>
+        </div>
+      </div>
+      <div class="row" id="topbarActions" style="gap:4px"></div>
+    </div>
+  </header>
+
+  <main id="main" class="shell page">
+    <div id="view" aria-live="polite"></div>
+  </main>
+
+  <noscript>
+    <div class="shell page">
+      <div class="note note-warn">เว็บไซต์นี้ต้องเปิดใช้งาน JavaScript กรุณาเปิดใช้งานแล้วโหลดหน้าใหม่</div>
+    </div>
+  </noscript>
+
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>

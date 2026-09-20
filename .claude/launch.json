@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "wesco-assessment",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["wrangler", "pages", "dev", "--port", "8788", "--persist-to", ".wrangler/state"],
+      "port": 8788
+    }
+  ]
+}
