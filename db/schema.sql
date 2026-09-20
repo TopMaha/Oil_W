@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS admins (
   display_name  TEXT,
   pw_hash       TEXT    NOT NULL,
   pw_salt       TEXT    NOT NULL,
-  pw_iter       INTEGER NOT NULL DEFAULT 150000,
+  pw_iter       INTEGER NOT NULL DEFAULT 100000,
   is_active     INTEGER NOT NULL DEFAULT 1,
   created_at    TEXT    NOT NULL DEFAULT (datetime('now')),
   last_login_at TEXT

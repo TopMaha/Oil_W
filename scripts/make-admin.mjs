@@ -32,7 +32,7 @@ if (!/^[a-z0-9._-]{3,60}$/.test(username) || password.length < 8) {
   process.exit(1);
 }
 
-const ITER = 150000;
+const ITER = 100000;
 const salt = randomBytes(16).toString('hex');
 const hash = pbkdf2Sync(password, Buffer.from(salt, 'hex'), ITER, 32, 'sha256').toString('hex');
 const q = s => `'${String(s).replace(/'/g, "''")}'`;

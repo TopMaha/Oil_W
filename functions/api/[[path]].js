@@ -27,6 +27,9 @@ const hex = buf => [...new Uint8Array(buf)].map(b => b.toString(16).padStart(2, 
 
 const randomToken = () => hex(crypto.getRandomValues(new Uint8Array(32)));
 
+/** Cloudflare Workers รองรับ PBKDF2 ได้สูงสุด 100,000 รอบ — ใส่เกินกว่านี้จะ throw ตอนรันบนของจริง */
+const PBKDF2_ITER = 100000;
+
 async function pbkdf2(password, saltHex, iterations) {
   const salt = Uint8Array.from(saltHex.match(/.{2}/g).map(h => parseInt(h, 16)));
   const key = await crypto.subtle.importKey('raw', new TextEncoder().encode(password), 'PBKDF2', false, ['deriveBits']);
@@ -571,7 +574,7 @@ async function adminRoutes(ctx) {
     if (password.length < 8) return fail('รหัสผ่านต้องยาวอย่างน้อย 8 ตัวอักษร', 422, { field: 'password' });
 
     const salt = hex(crypto.getRandomValues(new Uint8Array(16)));
-    const iter = 150000;
+    const iter = PBKDF2_ITER;
     const hash = await pbkdf2(password, salt, iter);
     const r = await db.prepare(
       'INSERT INTO admins (username, display_name, pw_hash, pw_salt, pw_iter) VALUES (?1, ?2, ?3, ?4, ?5)'
@@ -597,7 +600,7 @@ async function adminRoutes(ctx) {
 
     // เทียบ hash เสมอแม้ไม่พบผู้ใช้ เพื่อให้เวลาตอบสนองใกล้เคียงกัน
     const salt = row ? row.pw_salt : '00000000000000000000000000000000';
-    const iter = row ? int(row.pw_iter, 150000) : 150000;
+    const iter = row ? int(row.pw_iter, PBKDF2_ITER) : PBKDF2_ITER;
     const hash = await pbkdf2(password, salt, iter);
 
     if (!row || !timingSafeEqual(hash, row.pw_hash)) {
@@ -1069,7 +1072,7 @@ async function adminAccounts({ db, method, body }, admin, id) {
     if (dup) return fail('ชื่อผู้ใช้นี้มีอยู่แล้ว', 409, { field: 'username' });
 
     const salt = hex(crypto.getRandomValues(new Uint8Array(16)));
-    const iter = 150000;
+    const iter = PBKDF2_ITER;
     const hash = await pbkdf2(password, salt, iter);
     const r = await db.prepare(
       'INSERT INTO admins (username, display_name, pw_hash, pw_salt, pw_iter) VALUES (?1,?2,?3,?4,?5)'
@@ -1086,7 +1089,7 @@ async function adminAccounts({ db, method, body }, admin, id) {
     const password = String(body.password || '');
     if (password.length < 8) return fail('รหัสผ่านต้องยาวอย่างน้อย 8 ตัวอักษร', 422, { field: 'password' });
     const salt = hex(crypto.getRandomValues(new Uint8Array(16)));
-    const iter = 150000;
+    const iter = PBKDF2_ITER;
     const hash = await pbkdf2(password, salt, iter);
     await db.prepare('UPDATE admins SET pw_hash=?2, pw_salt=?3, pw_iter=?4 WHERE id=?1')
       .bind(targetId, hash, salt, iter).run();
