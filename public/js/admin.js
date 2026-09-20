@@ -13,6 +13,14 @@ const actions = $('#topbarActions');
 const sidebar = $('#sidebar');
 const sidenav = $('#sidenav');
 const bottomnav = $('#bottomnav');
+const layout = $('.admin-layout');
+
+/** ซ่อน/แสดงเมนู และให้เนื้อหาใช้ความกว้างเต็มเมื่อยังไม่ล็อกอิน */
+const setChrome = on => {
+  sidebar.hidden = !on;
+  bottomnav.hidden = !on;
+  layout.classList.toggle('is-plain', !on);
+};
 
 const PAGES = [
   { id: 'dash', label: 'ภาพรวม', icon: 'chart' },
@@ -101,13 +109,13 @@ function viewBootstrap() {
     note('warn', 'หน้านี้จะใช้ได้เพียงครั้งเดียว เมื่อสร้างบัญชีแรกแล้วระบบจะปิดการเข้าถึงโดยอัตโนมัติ'),
   );
   clear(view).append(host);
-  sidebar.hidden = true; bottomnav.hidden = true;
+  setChrome(false);
 }
 
 /* ═══════════════════ เข้าสู่ระบบ ═══════════════════ */
 function viewLogin() {
   clear(actions).append(themeButton());
-  sidebar.hidden = true; bottomnav.hidden = true;
+  setChrome(false);
 
   const fUser = field({ label: 'ชื่อผู้ใช้', name: 'username', required: true, autocomplete: 'username' });
   const fPass = field({ label: 'รหัสผ่าน', name: 'password', type: 'password', required: true, autocomplete: 'current-password' });
@@ -168,7 +176,7 @@ function render() {
 }
 
 function paintNav() {
-  sidebar.hidden = false; bottomnav.hidden = false;
+  setChrome(true);
   clear(sidenav); clear(bottomnav);
   for (const p of PAGES) {
     const current = state.page === p.id;
