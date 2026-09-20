@@ -410,7 +410,7 @@ function editTopic(t) {
 /* ── คำถามในหัวข้อ ── */
 async function manageQuestions(topic) {
   const body = el('div', {}, [loading(120)]);
-  const m = modal({ title: `คำถาม — ${topic.title}`, body, wide: true });
+  modal({ title: `คำถาม — ${topic.title}`, body, wide: true });
 
   const load = async () => {
     clear(body).append(loading(120));
@@ -453,7 +453,6 @@ async function manageQuestions(topic) {
     );
   };
   load();
-  m.close2 = m.close;
 }
 
 function editQuestion(topic, q, reload) {
